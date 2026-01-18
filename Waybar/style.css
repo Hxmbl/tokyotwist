@@ -1,0 +1,105 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  border: none;
+  min-height: 0;
+  font-family: 'CaskaydiaMono Nerd Font Propo';
+  font-weight: 600;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: @background;
+  color: @foreground;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: 0px solid alpha(@foreground, 0.75);
+  border-radius: 15px;
+}
+
+#window {
+  text-shadow: 0px 0px 2px alpha(@foreground, 0.6);
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+  font-size: 10px;
+}
+
+#custom-omarchy {
+  margin: 0;
+  padding-top: 1px;
+  font-size: 14px;
+}
+
+.modules-left {
+  padding-left: 8px;
+  padding-top: 0px;
+  margin-right: 4px;
+  text-shadow: 0px 0px 2px alpha(@foreground, 0.1);
+  font-size: 12px;
+}
+
+.modules-center {
+  border-radius: 0;
+  padding: 0 5px;
+  padding-top: 0px;
+  padding-left: 4px;
+  font-size: 12px;
+}
+
+.modules-right {
+  padding-left: 4px;
+  padding-top: 0px;
+  margin-right: 8px;
+  text-shadow: 0px 0px 2px alpha(@foreground, 0.1);
+  font-size: 12px;
+}
+
+#workspaces {
+  padding: 1px 0px 1px;
+  margin: 1px;
+  border-radius: 18px;
+  opacity: 0.95;
+}
+
+#workspaces button {
+  min-width: 22px;
+  min-height: 1px;
+  padding: 1px;
+  margin: 1px 1px;
+  border-radius: 3px;
+  background-color: @background;
+  opacity: 0.45;
+  color: @foreground;
+  font-size: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.active {
+  background: linear-gradient(135deg, #B9D1EB, #F876DE);
+  border-radius: 15px;
+  color: @background;
+  min-width: 50px;
+  opacity: 1.0;
+  font-size: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+#workspaces button:hover {
+  color: @foreground;
+  background: alpha(@background, 0.1);
+  border-radius: 2px;
+  opacity: 1.0;
+}
+
+#workspaces button.empty {
+  opacity: 0.25;
+}
+
+#workspaces button.urgent {
+  background-color: transparent;
+  color: #ff0000;
+  border-radius: 10px;
+}
+
+/* other CSS here... */
