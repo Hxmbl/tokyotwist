@@ -1,1 +1,1 @@
-# Hxmbl-Omarchy-Theme
+# Tokyo Omarchy Theme but with some edits
