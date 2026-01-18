@@ -11,7 +11,7 @@ window .box-wrapper {
   background: @background;
   padding: 12px;
   color: @text;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 4px solid #22283a;
   /* border: 0px; */
   margin: 0;
