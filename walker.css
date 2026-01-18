@@ -21,7 +21,7 @@ window .search-container {
   background: #22283a;
   /* border: 2px solid @border; */
   color: #ffee99;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 window .placeholder {
@@ -38,7 +38,7 @@ window .input {
 child {
   padding: 0 8px;
   background: transparent;
-  border-radius: 0;
+  border-radius: 16;
   border-left: 0px solid transparent;
   transition: all 160ms ease-in-out;
 }
@@ -53,6 +53,6 @@ child:selected {
   background: linear-gradient(90deg, alpha(@accent, 0.2), transparent 100%);
   background: #88b3fa;
   color: #000000;
-  border-radius: 8px;
+  border-radius: 16px;
   border-left: 0px solid @accent;
 }
